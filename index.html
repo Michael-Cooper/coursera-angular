@@ -4,13 +4,22 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html ng-app="myFirstApp">
     <head>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
         <title>Hello Coursera</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div ng-controller="myFirstController">
         <h1>Hello Coursera</h1>
+        <input type="text" ng-model="name">
+        {{sayHello()}}<br>
+        {{name}}
+        
+        </div>
     </body>
+    
 </html>
