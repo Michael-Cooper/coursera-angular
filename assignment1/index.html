@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="NameCalculator">
+    <head>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        <style>body {font-size : 1.3em; }</style>
+        <title>Name Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="nameController">
+        <h1>Assignment 1</h1>
+        <div>
+            <div>
+                Enter items you usually eat for lunch: 
+            </div>
+            <div>
+                <input type="text" ng-model="lunchItems" ng-style="{'border-color' : borderColor}">
+                <button ng-click="checkItems()">Check If Too Much</button>
+                (empty items are not considered)
+            </div>
+            <div ng-style="{'color' : color}">
+                <h1>{{response}}</h1>
+            </div>
+        
+        </div>
+    </body>
+    
+</html>
